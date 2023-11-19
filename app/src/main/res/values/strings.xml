@@ -28,6 +28,15 @@
         \n\nDengan beberapa fitur yang mempermudah koordinasi dan pengelolaan kegiatan mulai dari penjadwalan, rincian panitia, mengelola anggaran, checklist.
         \n\nSerta beberapa fitur tambahan lain yang dapat mengorganisir kegiatan dengan lebih efisien, menjaga jadwal teratur, dan terkelola dengan baik.</string>
 
-
+    <string name="onboarding1">Berikan Sentuhan Magis pada Setiap Event Anda</string>
+    <string name="paragraf1">Selamat bergabung di TIM KU, tempat di mana setiap ide acara Anda menjadi kenyataan. Mulailah perjalanan pengorganisasian acara yang tak terlupakan bersama kami.</string>
+    <string name="next">Selanjutnya</string>
+    <string name="next1">Lewati</string>
+    <string name="onboarding2">Komitmen Kami Mewujudkan Event Impian Anda</string>
+    <string name="onboarding3">Alat Canggih untuk Mengelola Event dengan Lebih Mudah</string>
+    <string name="onboarding4">Bergabung, Berkolaborasi, Berkesan.</string>
+    <string name="paragraf2">Tekad kami untuk menyederhanakan dan memperindah setiap aspek dalam mengorganisir acara. Dengan tim yang berdedikasi, kami siap mendukung setiap langkah perjalanan acara Anda.</string>
+    <string name="paragraf3">Temukan fitur-fitur andalan kami, mulai dari perencanaan jadwal, manajemen peserta, hingga anggaran. Dengan TIM KU, Anda dapat fokus pada kreasi tanpa harus khawatir dengan detail teknis.</string>
+    <string name="paragraf4">Ayo bergabung dengan kami! Bersama-sama, kita bisa membuat setiap acara menjadi luar biasa.</string>
 
 </resources>
