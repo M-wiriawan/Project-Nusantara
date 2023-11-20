@@ -28,7 +28,7 @@ class Onboarding1Activity : AppCompatActivity(), View.OnClickListener {
             }
 
             R.id.btn_lwt-> {
-                val intent = Intent (this@Onboarding1Activity, Onboarding2Activity::class.java)
+                val intent = Intent (this@Onboarding1Activity, Onboarding4Activity::class.java)
                 startActivity(intent)
             }
 
