@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanitiaEvent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imv_bckgevent"
+        android:layout_width="412dp"
+        android:layout_height="191dp"
+        android:src="@drawable/bckgevent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pom"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_pom"
+        android:layout_width="170dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="1dp"
+        android:text="@string/pom"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/v_detail"
+        android:layout_width="412dp"
+        android:layout_height="6dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="47dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Detail"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_bckgevent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_panitia"
+        android:layout_width="53dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:text="Panitia"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <TextView
+        android:id="@+id/tv_agenda"
+        android:layout_width="57dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:text="Agenda"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_panitia"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <TextView
+        android:id="@+id/tv_anggaran"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:text="Anggaran"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_agenda"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <TextView
+        android:id="@+id/tv_chekclist"
+        android:layout_width="66dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:text="Checklist"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_anggaran"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <TextView
+        android:id="@+id/tv_ketua"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Ketua Panitia"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/v_detail"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <EditText
+        android:id="@+id/et_ketua"
+        android:layout_width="318dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:text="Vera Romandhon"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/img_ketua"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ketua"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_ketua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ceklis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ketua" />
+
+    <EditText
+        android:id="@+id/et_dvsacara"
+        android:layout_width="318dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:text="Margaretha Meylia"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/img_dvsacara"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dvsacara"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_dvsacara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ceklis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dvsacara" />
+
+    <TextView
+        android:id="@+id/tv_dvsacara"
+        android:layout_width="96dp"
+        android:layout_height="23dp"
+        android:text="Divisi Acara"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/et_ketua"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <EditText
+        android:id="@+id/et_dvsacara1"
+        android:layout_width="318dp"
+        android:layout_height="34dp"
+        android:text="Muhammad Thoriq"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_dvsacara"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <ImageView
+        android:id="@+id/img_dvsacara1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/ceklis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_dvsacara" />
+
+    <TextView
+        android:id="@+id/tv_dvskonsumsi"
+        android:layout_width="131dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:text="Divisi Konsumsi"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/et_dvsacara1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <EditText
+        android:id="@+id/et_dvskonsumsi"
+        android:layout_width="318dp"
+        android:layout_height="34dp"
+        android:text="Wiriawan Nasution"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dvskonsumsi"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <ImageView
+        android:id="@+id/img_dvskonsumsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ceklis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dvskonsumsi" />
+
+    <EditText
+        android:id="@+id/et_dvskonsumsi1"
+        android:layout_width="318dp"
+        android:layout_height="34dp"
+        android:text="Hana Mardini"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_dvskonsumsi"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <ImageView
+        android:id="@+id/img_dvskonsumsi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/ceklis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_dvskonsumsi" />
+
+    <TextView
+        android:id="@+id/tv_nondvs"
+        android:layout_width="131dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:text="Non Divisi"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/et_dvskonsumsi1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <EditText
+        android:id="@+id/et_nondvs"
+        android:layout_width="318dp"
+        android:layout_height="34dp"
+        android:text="Adryan Eka"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nondvs"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <EditText
+        android:id="@+id/et_nondvs1"
+        android:layout_width="318dp"
+        android:layout_height="34dp"
+        android:text="Amalia Fyrdaussa"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_nondvs"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <ImageView
+        android:id="@+id/img_nondvs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ceklis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nondvs" />
+
+    <ImageView
+        android:id="@+id/img_nondvs1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/ceklis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_nondvs" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nondvs1" />
+
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nondvs1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

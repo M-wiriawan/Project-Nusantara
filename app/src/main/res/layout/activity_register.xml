@@ -146,6 +146,7 @@
         android:layout_marginEnd="90dp"
         android:text="Masuk"
         android:textStyle="bold"
+        android:backgroundTint="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
