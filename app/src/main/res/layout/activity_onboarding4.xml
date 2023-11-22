@@ -8,6 +8,7 @@
 
 
     <ImageView
+        android:id="@+id/img_back"
         android:layout_width="49dp"
         android:layout_height="31dp"
         android:src="@drawable/back"
@@ -69,7 +70,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_slnjut"
+        android:id="@+id/btn_slnjutnya"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
