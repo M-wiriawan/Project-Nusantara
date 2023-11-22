@@ -9,20 +9,20 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_ubhprofil"
         android:layout_width="110dp"
         android:layout_height="29dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:text="@string/ubhprofil"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.024"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/img_back"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_ubhnama"
         android:layout_width="124dp"
         android:layout_height="26dp"
         android:layout_marginTop="60dp"
@@ -32,41 +32,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_ubhprofil" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/et_ubhnama"
         android:layout_width="325dp"
         android:layout_height="43dp"
         android:background="@drawable/custom_edit_text"
         android:hint="@string/ubhnama"
         android:inputType="textPassword"
         android:textColor="@color/dark_grey"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ubhnama"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="46dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_ubhdivisi"
         android:layout_width="116dp"
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
         android:text="@string/ubhdivisi"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/et_ubhnama"
         tools:layout_editor_absoluteX="46dp"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/et_ubhdivisi"
         android:layout_width="325dp"
         android:layout_height="43dp"
         android:background="@drawable/custom_edit_text"
         android:hint="@string/ubhdivisi"
         android:inputType="textPassword"
         android:textColor="@color/dark_grey"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ubhdivisi"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="46dp" />
 
@@ -77,18 +77,20 @@
         android:layout_marginTop="48dp"
         android:text="Simpan"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/editText7"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/et_ubhdivisi"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="46dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/img_back"
         android:layout_width="32dp"
         android:layout_height="26dp"
         android:layout_marginStart="36dp"
+        android:layout_marginTop="25dp"
         android:src="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="28dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

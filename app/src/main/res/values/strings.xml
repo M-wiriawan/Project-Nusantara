@@ -40,4 +40,29 @@
     <string name="paragraf3">Temukan fitur-fitur andalan kami, mulai dari perencanaan jadwal, manajemen peserta, hingga anggaran. Dengan TIM KU, Anda dapat fokus pada kreasi tanpa harus khawatir dengan detail teknis.</string>
     <string name="paragraf4">Ayo bergabung dengan kami! Bersama-sama, kita bisa membuat setiap acara menjadi luar biasa.</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pom">Pekan Olahraga Maha...</string>
+    <string name="detail">Pekan Olahraga Mahasiswa merupakan event olahraga
+        \n yang dikhususkan untuk mahasiswa Internal STIE Bank BPD Jateng.</string>
+
+    <string name="tambahan">Undang beberapa anggota.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="organisasi">Organisasikan Acaramu dengan Mudah</string>
+    <string name="rencana">Rencanakan, Undang, dan Atur Acaramu dalam Sekejap</string>
+    <string name="solusi">Solusi lengkap yang membantu anda
+        \n merencanakan, mengundang, dan mengelola acara
+        \n anda dengan mudah.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tandai">Tandai yang sudah dibaca</string>
+    <string name="jangan1">Jangan lupa untuk mengikuti Rapat Konsep Final
+        \n Kamis, 26 Oktober 2023, ya!</string>
+    <string name="jangan2">Jangan lupa untuk mengikuti Rapat Konsep 2
+        \n Senin, 23 Oktober 2023, ya!</string>
+    <string name="jangan3">Jangan lupa untuk mengikuti Rapat Konsep 1
+        \n Jumat, 20 Oktober 2023, ya!</string>
+    <string name="jangan4">Jangan lupa untuk mengikuti Rapat Perdana
+        \n Rabu, 18 Oktober 2023, ya!</string>
+
 </resources>

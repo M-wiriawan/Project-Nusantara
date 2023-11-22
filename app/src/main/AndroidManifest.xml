@@ -13,22 +13,25 @@
         android:theme="@style/Theme.Massive"
         tools:targetApi="34">
         <activity
+            android:name=".Activity.FiturActivity"
+            android:exported="false" />
+        <activity
             android:name=".Registrasi"
             android:exported="false" />
         <activity
-            android:name=".Onboarding4Activity"
+            android:name=".Activity.Onboarding4Activity"
             android:exported="false" />
         <activity
-            android:name=".Onboarding3Activity"
+            android:name=".Activity.Onboarding3Activity"
             android:exported="false" />
         <activity
-            android:name=".Onboarding2Activity"
+            android:name=".Activity.Onboarding2Activity"
             android:exported="false" />
         <activity
-            android:name=".Onboarding1Activity"
+            android:name=".Activity.Onboarding1Activity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".Activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
