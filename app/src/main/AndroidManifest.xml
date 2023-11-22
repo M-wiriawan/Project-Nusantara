@@ -13,10 +13,13 @@
         android:theme="@style/Theme.Massive"
         tools:targetApi="34">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.FiturActivity"
             android:exported="false" />
         <activity
-            android:name=".Registrasi"
+            android:name=".Activity.Registrasi"
             android:exported="false" />
         <activity
             android:name=".Activity.Onboarding4Activity"

@@ -8,6 +8,7 @@
 
 
     <ImageView
+        android:id="@+id/img_back"
         android:layout_width="49dp"
         android:layout_height="31dp"
         android:src="@drawable/back"
