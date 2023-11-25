@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         when (v.id) {
 
             R.id.btn_masuk1 -> {
-                val intent = Intent(this@LoginActivity, Beranda::class.java)
+                val intent = Intent(this@LoginActivity, FiturActivity::class.java)
                 startActivity(intent)
             }
         }

@@ -8,7 +8,6 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-
     <ImageView
         android:id="@+id/img_logowarna"
         android:layout_width="127dp"
@@ -31,31 +30,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/img_bgprofil"
-        android:layout_width="513dp"
-        android:layout_height="190dp"
+        android:layout_width="399dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="92dp"
         android:src="@drawable/bgprofil"
-        app:layout_constraintTop_toBottomOf="@+id/img_logowarna"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-44dp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_profil"
         android:layout_width="80dp"
         android:layout_height="75dp"
+        android:layout_marginTop="148dp"
         android:backgroundTint="@color/blue"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_bgprofil"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="188dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="48dp"
         android:text="Hana Mardini Putri"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -66,13 +70,14 @@
         android:id="@+id/tv_namadvs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
         android:text="Divisi media"
-        android:textStyle="bold"
         android:textColor="@color/dark_grey"
         android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_nama"
         app:layout_constraintTop_toBottomOf="@+id/tv_nama"
-        tools:layout_editor_absoluteX="173dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
