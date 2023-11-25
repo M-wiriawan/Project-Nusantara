@@ -120,7 +120,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_katasandi"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_masuk1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -128,8 +128,11 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="90dp"
         android:text="Masuk"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:backgroundTint="@color/blue"
+        android:background="@drawable/btn_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"

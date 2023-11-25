@@ -53,27 +53,37 @@
         app:layout_constraintStart_toStartOf="@+id/tv_organisasi"
         app:layout_constraintTop_toBottomOf="@+id/tv_organisasi" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_buatevent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="126dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/btn_blue"
         android:backgroundTint="@color/blue"
         android:text="Buat Event"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_rencana"
-        tools:layout_editor_absoluteX="54dp"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_gbngevent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="126dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/btn_grey"
         android:backgroundTint="@color/light_white"
         android:text="Gabung Event"
+        android:textAllCaps="false"
         android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toEndOf="@+id/btn_buatevent"
         app:layout_constraintTop_toBottomOf="@+id/tv_rencana"
-        tools:layout_editor_absoluteX="224dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -98,6 +108,48 @@
         android:textColor="@color/dark_grey"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/img_beranda"
+        app:layout_constraintTop_toBottomOf="@+id/img_beranda" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/img_beranda" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_beranda"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/img_beranda" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/img_beranda" />
 
 

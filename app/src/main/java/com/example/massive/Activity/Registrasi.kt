@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import com.example.massive.Beranda
 import com.example.massive.R
 
 class Registrasi : AppCompatActivity(), View.OnClickListener {
@@ -21,9 +20,9 @@ class Registrasi : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        etemail = findViewById(R.id.edt_email)
-        etkatasandi = findViewById(R.id.edt_sandi)
-        etkatasandi2 = findViewById(R.id.edt_sandi2)
+//        etemail = findViewById(R.id.edt_email)
+//        etkatasandi = findViewById(R.id.edt_sandi)
+//        etkatasandi2 = findViewById(R.id.edt_sandi2)
 
         val btnMulai: Button = findViewById(R.id.btn_masuk)
         btnMulai.setOnClickListener(this)

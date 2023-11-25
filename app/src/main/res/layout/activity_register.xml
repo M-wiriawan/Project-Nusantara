@@ -80,6 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="330dp"
         android:text="Konfirmasi Kata Sandi"
         android:textSize="14sp"
@@ -111,6 +112,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="330dp"
         android:text="Kata Sandi"
         android:textSize="14sp"
@@ -137,7 +139,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_katasandi"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_masuk"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -145,8 +147,11 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="90dp"
         android:text="Masuk"
+        android:textAllCaps="false"
         android:textStyle="bold"
+        android:textColor="@color/white"
         android:backgroundTint="@color/blue"
+        android:background="@drawable/btn_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -171,7 +176,7 @@
         android:layout_width="38dp"
         android:layout_height="16dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="140dp"
+        android:layout_marginEnd="124dp"
         android:text="Login"
         android:textColor="@color/blue"
         android:textSize="13sp"
