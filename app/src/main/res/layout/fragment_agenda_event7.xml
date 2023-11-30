@@ -67,6 +67,7 @@
         android:id="@+id/img_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="348dp"
         android:layout_marginTop="28dp"
         android:src="@drawable/down"
         app:layout_constraintStart_toStartOf="parent"
