@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,7 +18,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [InformasiAplikasi.newInstance] factory method to
  * create an instance of this fragment.
  */
-class InformasiAplikasi : Fragment() {
+class InformasiAplikasi : Fragment(), View.OnClickListener {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -37,6 +39,13 @@ class InformasiAplikasi : Fragment() {
         return inflater.inflate(R.layout.fragment_informasi_aplikasi, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val imgBack: ImageView = view.findViewById(R.id.imageView5)
+        imgBack.setOnClickListener(this)
+    }
+
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -55,5 +64,17 @@ class InformasiAplikasi : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onClick(v: View?) {
+        if (v?.id == R.id.imageView5) {
+                val back = Profile()
+                val fragmentManager = parentFragmentManager
+                fragmentManager.beginTransaction().apply {
+                    replace(R.id.framelayout, back, Profile::class.java.simpleName)
+                    addToBackStack(null)
+                    commit()
+                }
+        }
     }
 }

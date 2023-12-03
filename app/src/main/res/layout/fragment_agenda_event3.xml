@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AgendaEvent3">
@@ -15,6 +21,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginStart="1dp"
         android:text="Tambah Agenda"
+        android:paddingTop="3dp"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,138 +44,131 @@
 
     <TextView
         android:id="@+id/tv_jenis"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
         android:text="Jenis"
-        android:textSize="14sp"
         android:textColor="@color/black"
+        android:textSize="14sp"
         android:textStyle="bold"
-        android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_pom" />
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
         android:id="@+id/et_jenis"
-        android:layout_width="match_parent"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:hint="Pilih Jenis"
-        android:textSize="14sp"
-        android:textColor="@color/dark_grey"
-        android:padding="12dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/custom_edit_text"
+        android:hint="Masukkan Nama Jenis"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_jenis"
         app:layout_constraintTop_toBottomOf="@+id/tv_jenis" />
 
-    <ImageView
-        android:id="@+id/img_kalender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:src="@drawable/down"
-        app:layout_constraintTop_toBottomOf="@+id/tv_jenis"
-        tools:layout_editor_absoluteX="352dp" />
 
     <TextView
         android:id="@+id/tv_nama"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
         android:text="Nama"
-        android:textSize="14sp"
         android:textColor="@color/black"
+        android:textSize="14sp"
         android:textStyle="bold"
-        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@+id/et_jenis"
         app:layout_constraintTop_toBottomOf="@+id/et_jenis" />
 
     <EditText
         android:id="@+id/et_nama"
-        android:layout_width="match_parent"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_edit_text"
         android:hint="Masukkan Nama Agenda"
         android:inputType="text"
-        android:textSize="14sp"
-        android:textColor="@color/dark_grey"
         android:padding="12dp"
-        android:background="@drawable/custom_edit_text"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_nama"
         app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
 
     <TextView
         android:id="@+id/tv_deskripsi"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
         android:text="Deskripsi"
-        android:textSize="14sp"
         android:textColor="@color/black"
+        android:textSize="14sp"
         android:textStyle="bold"
-        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@+id/et_nama"
         app:layout_constraintTop_toBottomOf="@+id/et_nama" />
 
     <EditText
         android:id="@+id/et_deskripsi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="325dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingBottom="70dp"
+        android:textSize="14sp"
+        android:background="@drawable/custom_edit_text"
         android:hint="Isi Deskripsi Agenda"
         android:inputType="text"
-        android:textSize="14sp"
-        android:textColor="@color/dark_grey"
-        android:padding="12dp"
-        android:background="@drawable/custom_edit_text"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_deskripsi"
         app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi" />
 
     <TextView
         android:id="@+id/tv_tanggal"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
         android:text="Jadwal"
-        android:textSize="14sp"
         android:textColor="@color/black"
+        android:textSize="14sp"
         android:textStyle="bold"
-        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@+id/et_deskripsi"
         app:layout_constraintTop_toBottomOf="@+id/et_deskripsi" />
 
     <EditText
         android:id="@+id/et_tanggal"
-        android:layout_width="match_parent"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_edit_text"
         android:hint="Masukkan Tanggal Agenda"
         android:inputType="text"
-        android:textSize="14sp"
-        android:textColor="@color/dark_grey"
         android:padding="12dp"
         android:paddingStart="44dp"
-        android:background="@drawable/custom_edit_text"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_tanggal"
         app:layout_constraintTop_toBottomOf="@+id/tv_tanggal" />
 
     <ImageView
         android:id="@+id/img_kalender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/kalender"
-        app:layout_constraintTop_toBottomOf="@+id/tv_tanggal"
-        tools:layout_editor_absoluteX="33dp" />
+        app:layout_constraintStart_toStartOf="@+id/et_tanggal"
+        app:layout_constraintTop_toTopOf="@+id/et_tanggal" />
 
+    <include
+        layout="@layout/fragment_agenda_not"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_tanggal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_tanggal"
+        app:layout_constraintTop_toBottomOf="@+id/et_tanggal" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

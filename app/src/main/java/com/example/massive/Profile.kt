@@ -5,18 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Profile.newInstance] factory method to
- * create an instance of this fragment.
- */
-class Profile : Fragment() {
+
+class Profile : Fragment(), View.OnClickListener {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -37,6 +35,23 @@ class Profile : Fragment() {
         return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val imgNotifikasi: ImageView = view.findViewById(R.id.img_notif)
+        imgNotifikasi.setOnClickListener(this)
+
+        val ubahprofil: TextView = view.findViewById(R.id.tv_ubhprofil)
+        ubahprofil.setOnClickListener(this)
+
+        val ubahsandi: TextView = view.findViewById(R.id.tv_ubhkatasandi)
+        ubahsandi.setOnClickListener(this)
+
+        val infoapk: TextView = view.findViewById(R.id.tv_infoapk)
+        infoapk.setOnClickListener(this)
+
+    }
+
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -55,5 +70,47 @@ class Profile : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onClick(v: View?) {
+        if (v?.id == R.id.img_notif) {
+            val notifikasi = Notifikasi()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, notifikasi, Notifikasi::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.tv_ubhprofil) {
+            val ubahprofil = UbahProfile()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, ubahprofil, UbahProfile::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.tv_ubhkatasandi) {
+            val ubahsandi = UbahKataSandi()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, ubahsandi, UbahKataSandi::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.tv_infoapk) {
+            val informasi = InformasiAplikasi()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, informasi, InformasiAplikasi::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
     }
 }

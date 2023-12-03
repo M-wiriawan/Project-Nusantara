@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Panitia2Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Non Divisi"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/textView43"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="294dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:text="Muhammad Thoriq"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border2"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/view14" />
+
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="294dp"
+        android:layout_height="36dp"
+        android:text="Hana Mardini"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/view15"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border2"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/view15"
+        app:layout_constraintTop_toBottomOf="@+id/view15" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="294dp"
+        android:layout_height="36dp"
+        android:text="Margaretha Meylia"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/view16"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_next"
+        app:layout_constraintEnd_toEndOf="@+id/btn_next"
+        app:layout_constraintStart_toStartOf="@+id/btn_next"
+        app:layout_constraintTop_toTopOf="@+id/btn_next" />
+
+    <View
+        android:layout_width="405dp"
+        android:layout_height="84dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_next"
+        tools:layout_editor_absoluteX="3dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

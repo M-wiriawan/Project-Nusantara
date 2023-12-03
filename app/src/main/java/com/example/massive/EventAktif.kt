@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,7 +18,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [EventAktif.newInstance] factory method to
  * create an instance of this fragment.
  */
-class EventAktif : Fragment() {
+class EventAktif : Fragment(), View.OnClickListener {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -37,6 +39,20 @@ class EventAktif : Fragment() {
         return inflater.inflate(R.layout.fragment_event_aktif, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val imgNotifikasi: ImageView = view.findViewById(R.id.img_notif)
+        imgNotifikasi.setOnClickListener(this)
+
+        val terdahulu: Button = view.findViewById(R.id.btn_eventterdahulu)
+        terdahulu.setOnClickListener(this)
+
+        val detail: ImageView = view.findViewById(R.id.img_eventdahulu)
+        detail.setOnClickListener(this)
+
+    }
+
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -55,5 +71,38 @@ class EventAktif : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onClick(v: View?) {
+        if (v?.id == R.id.img_notif) {
+            val notifikasi = Notifikasi()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, notifikasi, Notifikasi::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.btn_eventterdahulu) {
+            val terdahulu = EventTerdahulu()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, terdahulu, EventTerdahulu::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.img_eventdahulu) {
+            val detail = DetailEvent()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, detail, DetailEvent::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
     }
 }

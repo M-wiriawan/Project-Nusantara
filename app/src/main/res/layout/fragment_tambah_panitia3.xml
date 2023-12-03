@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_white"
     tools:context=".TambahPanitia3">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,6 +13,7 @@
         android:id="@+id/tv_anggota"
         android:layout_width="170dp"
         android:layout_height="27dp"
+        android:paddingTop="5dp"
         android:layout_marginTop="24dp"
         android:text="Tambah Anggota"
         android:textSize="14sp"
@@ -36,55 +38,59 @@
         android:id="@+id/td_pilihdivisi"
         android:layout_width="92dp"
         android:layout_height="24dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
-        android:layout_marginStart="25dp"
         android:text="Pilih Divisi"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/tv_anggota"
-        tools:layout_editor_absoluteX="49dp"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edt_divisi"
-        android:layout_width="348dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="25dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="122dp" />
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/td_pilihdivisi"
+        app:layout_constraintTop_toBottomOf="@+id/td_pilihdivisi"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/td_pilihangota"
         android:layout_width="92dp"
-        android:layout_height="24dp"
+        android:layout_height="25dp"
         android:layout_marginTop="24dp"
         android:text="Pilih Anggota"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edt_divisi"
         app:layout_constraintTop_toBottomOf="@+id/edt_divisi"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="49dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edt_anggota"
-        android:layout_width="348dp"
-        android:layout_height="44dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="222dp" />
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/td_pilihangota"
+        app:layout_constraintTop_toBottomOf="@+id/td_pilihangota"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/edt_anggota"
+        android:id="@+id/btn_anggota"
         android:layout_width="297dp"
-        android:layout_height="57dp"
-        android:text="Tambahkan Anggota"
+        android:layout_height="32dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/btn_blue"
-        android:backgroundTint="@color/blue"
+        android:text="Tambahkan Anggota"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        tools:ignore="DuplicateIds,MissingConstraints"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="530dp" />
+        app:layout_constraintEnd_toEndOf="@+id/edt_anggota"
+        app:layout_constraintStart_toStartOf="@+id/edt_anggota"
+        app:layout_constraintTop_toBottomOf="@+id/edt_anggota"
+        tools:ignore="DuplicateIds,MissingConstraints,NotSibling" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

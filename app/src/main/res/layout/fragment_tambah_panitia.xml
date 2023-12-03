@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_white"
     tools:context=".TambahPanitia">
 
     <!-- TODO: Update blank fragment layout -->
@@ -34,141 +35,154 @@
 
     <TextView
         android:id="@+id/tv_ketuapanitia"
-        android:layout_width="88dp"
-        android:layout_height="21dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
         android:text="Ketua Panitia"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/img_back"
         app:layout_constraintTop_toBottomOf="@+id/tv_tambahpanitia"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/et_ketua"
-        android:layout_width="342dp"
+        android:layout_width="325dp"
         android:layout_height="35dp"
+        android:text="Vera Romadhon"
+        android:textSize="12sp"
+        android:inputType="text"
         android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_ketuapanitia"
         app:layout_constraintTop_toBottomOf="@+id/tv_ketuapanitia"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="103dp"
-        android:layout_height="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Divisi Acara"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/et_ketua"
         app:layout_constraintTop_toBottomOf="@+id/et_ketua"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edt_acara"
-        android:layout_width="340dp"
-        android:layout_height="43dp"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edt_acara1"
-        android:layout_width="343dp"
-        android:layout_height="36dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="237dp" />
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/edt_acara"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_logistik"
         android:layout_width="80dp"
         android:layout_height="22dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="Non Divisi"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edt_acara1"
         app:layout_constraintTop_toBottomOf="@+id/edt_acara1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edt_logis1"
-        android:layout_width="348dp"
-        android:layout_height="44dp"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/tv_logistik"
         app:layout_constraintTop_toBottomOf="@+id/tv_logistik"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edt_non2"
-        android:layout_width="348dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_logistik"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp" />
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/edt_logis1"
+        app:layout_constraintTop_toBottomOf="@+id/edt_logis1"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_divisi"
-        android:layout_width="251dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="240dp"
+        android:layout_width="297dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/btn_blue"
         android:backgroundTint="@color/blue"
+        android:text="Tambah Divisi"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:text="Tambah Divisi"
+        app:layout_constraintEnd_toEndOf="@+id/edt_non2"
+        app:layout_constraintStart_toStartOf="@+id/edt_non2"
         app:layout_constraintTop_toBottomOf="@+id/edt_logis1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="68dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_person"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
         android:src="@drawable/tambah_orang"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="335dp"
-        tools:layout_editor_absoluteY="105dp" />
+        app:layout_constraintEnd_toEndOf="@+id/et_ketua"
+        app:layout_constraintTop_toTopOf="@+id/et_ketua"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_person2"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="5dp"
         android:src="@drawable/tambah_orang"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="331dp"
-        tools:layout_editor_absoluteY="194dp" />
+        app:layout_constraintEnd_toEndOf="@+id/edt_acara"
+        app:layout_constraintTop_toTopOf="@+id/edt_acara"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_person3"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="5dp"
         android:src="@drawable/tambah_orang"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="331dp"
-        tools:layout_editor_absoluteY="237dp" />
+        app:layout_constraintEnd_toEndOf="@+id/edt_acara1"
+        app:layout_constraintTop_toTopOf="@+id/edt_acara1"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_person4"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:src="@drawable/tambah_orang"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="331dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintEnd_toEndOf="@+id/edt_logis1"
+        app:layout_constraintTop_toTopOf="@+id/edt_logis1"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_person5"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:src="@drawable/tambah_orang"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="331dp"
-        tools:layout_editor_absoluteY="367dp" />
+        app:layout_constraintEnd_toEndOf="@+id/edt_non2"
+        app:layout_constraintTop_toBottomOf="@+id/edt_logis1"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

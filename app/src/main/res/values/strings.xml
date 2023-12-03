@@ -42,8 +42,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="pom">Pekan Olahraga Maha...</string>
-    <string name="detail">Pekan Olahraga Mahasiswa merupakan event olahraga
-        \n yang dikhususkan untuk mahasiswa Internal STIE Bank BPD Jateng.</string>
+    <string name="detail">Pekan Olahraga Mahasiswa merupakan event olahraga yang dikhususkan untuk mahasiswa Internal STIE Bank BPD Jateng.</string>
 
     <string name="tambahan">Undang beberapa anggota.</string>
 
@@ -56,14 +55,18 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="tandai">Tandai yang sudah dibaca</string>
+    <string name="sudah_baca">Sudah dibaca</string>
     <string name="jangan1">Jangan lupa untuk mengikuti Rapat Konsep Final
-        \n Kamis, 26 Oktober 2023, ya!</string>
+        \nKamis, 26 Oktober 2023, ya!</string>
     <string name="jangan2">Jangan lupa untuk mengikuti Rapat Konsep 2
-        \n Senin, 23 Oktober 2023, ya!</string>
+        \nSenin, 23 Oktober 2023, ya!</string>
     <string name="jangan3">Jangan lupa untuk mengikuti Rapat Konsep 1
-        \n Jumat, 20 Oktober 2023, ya!</string>
+        \nJumat, 20 Oktober 2023, ya!</string>
     <string name="jangan4">Jangan lupa untuk mengikuti Rapat Perdana
-        \n Rabu, 18 Oktober 2023, ya!</string>
+        \nRabu, 18 Oktober 2023, ya!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bck_Buat_event">Buat Manajemen Event mu</string>
     <string name="Deskripsi">Membahas visi dan misi Pekan Olahraga Mahasiswa STIE Bank BPD Jateng Tahun 2023, serta ...</string>
     <string name="Desk_event4">Meninjau konsep akhir Pekan Olahraga Mahasiswa. Seluruh aspek acara akan dievaluasi, dan persiapan menuju pelaksanaan acara akan diperinci secara menyeluruh.</string>
 
@@ -77,5 +80,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <string name="info_lainnya">Email: HimaFPIPS@up.edu\nInstagram: POM.FPIPS\nCP: 088982782192</string>
 
 </resources>

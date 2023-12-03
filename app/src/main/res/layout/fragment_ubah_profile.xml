@@ -25,68 +25,74 @@
         android:id="@+id/tv_ubhnama"
         android:layout_width="124dp"
         android:layout_height="26dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="@string/ubhnama"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="@+id/img_back"
         app:layout_constraintTop_toBottomOf="@+id/tv_ubhprofil" />
 
     <EditText
         android:id="@+id/et_ubhnama"
-        android:layout_width="325dp"
-        android:layout_height="43dp"
+        android:layout_width="311dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
         android:background="@drawable/custom_edit_text"
         android:hint="@string/ubhnama"
-        android:inputType="textPassword"
-        android:textColor="@color/dark_grey"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_ubhnama"
         app:layout_constraintTop_toBottomOf="@+id/tv_ubhnama"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="46dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_ubhdivisi"
         android:layout_width="116dp"
         android:layout_height="25dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/ubhdivisi"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/et_ubhnama"
         app:layout_constraintTop_toBottomOf="@+id/et_ubhnama"
-        tools:layout_editor_absoluteX="46dp"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/et_ubhdivisi"
-        android:layout_width="325dp"
-        android:layout_height="43dp"
+        android:layout_width="306dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
         android:background="@drawable/custom_edit_text"
         android:hint="@string/ubhdivisi"
-        android:inputType="textPassword"
-        android:textColor="@color/dark_grey"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_ubhdivisi"
         app:layout_constraintTop_toBottomOf="@+id/tv_ubhdivisi"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="46dp" />
+        tools:ignore="MissingConstraints" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_simpan"
-        android:layout_width="325dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="309dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_blue"
         android:text="Simpan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textStyle="bold"
-        android:backgroundTint="@color/blue"
+        app:layout_constraintStart_toStartOf="@+id/et_ubhdivisi"
         app:layout_constraintTop_toBottomOf="@+id/et_ubhdivisi"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="46dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_back"
         android:layout_width="32dp"
         android:layout_height="26dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
         android:src="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"

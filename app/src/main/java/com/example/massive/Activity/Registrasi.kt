@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import com.example.massive.R
 
 class Registrasi : AppCompatActivity(), View.OnClickListener {
@@ -27,10 +28,22 @@ class Registrasi : AppCompatActivity(), View.OnClickListener {
         val btnMulai: Button = findViewById(R.id.btn_masuk)
         btnMulai.setOnClickListener(this)
 
-    }
-    override fun onClick(v: View) {
-        val intent = Intent(this@Registrasi, LoginActivity::class.java)
-        startActivity(intent)
+        val tvlogin: TextView = findViewById(R.id.tv_login)
+        tvlogin.setOnClickListener(this)
 
+    }
+
+    override fun onClick(v: View) {
+        when (v.id) {
+            R.id.btn_masuk -> {
+                val intent = Intent(this@Registrasi, FiturActivity::class.java)
+                startActivity(intent)
+            }
+
+            R.id.tv_login -> {
+                val intent = Intent(this@Registrasi, LoginActivity::class.java)
+                startActivity(intent)
+            }
+        }
     }
 }

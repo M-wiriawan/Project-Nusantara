@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    tools:context=".AgendaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imv_bckgevent"
+        android:layout_width="412dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/bckgevent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pom"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_pom"
+        android:layout_width="170dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="3dp"
+        android:text="@string/pom"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_notif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/notifikasi"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/v_detail"
+        android:layout_width="408dp"
+        android:layout_height="3dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="47dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Detail"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imv_bckgevent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_panitia"
+        android:layout_width="53dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:text="Panitia"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail"
+        app:layout_constraintTop_toTopOf="@+id/tv_detail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_agenda"
+        android:layout_width="57dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="10dp"
+        android:text="Agenda"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_panitia"
+        app:layout_constraintTop_toTopOf="@+id/tv_panitia"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_anggaran"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:text="Anggaran"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_agenda"
+        app:layout_constraintTop_toTopOf="@+id/tv_agenda"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_chekclist"
+        android:layout_width="66dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:text="Checklist"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_anggaran"
+        app:layout_constraintTop_toTopOf="@+id/tv_anggaran"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_agenda_1"
+        android:layout_width="330dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/kotak_agenda_1"
+        android:padding="8dp"
+        android:text="Agenda"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chekclist"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail"
+        app:layout_constraintTop_toBottomOf="@+id/v_detail" />
+
+    <TextView
+        android:id="@+id/tv_judul_1"
+        android:layout_width="330dp"
+        android:layout_height="31dp"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:text="Rapat Perdana"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_agenda_1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_agenda_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_agenda_1" />
+
+    <TextView
+        android:id="@+id/tv_deskripsi_1"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:text="@string/Deskripsi"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_judul_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_judul_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_judul_1" />
+
+    <TextView
+        android:id="@+id/tv_waktu_1"
+        android:layout_width="330dp"
+        android:layout_height="31dp"
+        android:background="@drawable/kotak_agenda_2"
+        android:padding="8dp"
+        android:text="18 Oktober 2023"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_deskripsi_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_deskripsi_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi_1" />
+
+    <TextView
+        android:id="@+id/tv_agenda_2"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/kotak_agenda_1"
+        android:padding="8dp"
+        android:text="Agenda"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_waktu_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_waktu_1" />
+
+    <TextView
+        android:id="@+id/tv_judul_2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:text="Rapat Konsep 1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_agenda_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_agenda_2" />
+
+    <TextView
+        android:id="@+id/tv_deskripsi_2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:text="Membahas rancangan awal kegiatan dan pembagian acara olahraga yang akan dilaksanakan..."
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_judul_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_judul_2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_waktu_2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak_agenda_2"
+        android:padding="8dp"
+        android:text="20 Oktober 2023"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_deskripsi_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi_2" />
+
+    <include
+        layout="@layout/fragment_agenda_event"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_waktu_2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_waktu_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_waktu_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

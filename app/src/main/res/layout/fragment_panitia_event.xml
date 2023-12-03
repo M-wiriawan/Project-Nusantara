@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_white"
     tools:context=".PanitiaEvent">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,6 +19,7 @@
         android:id="@+id/imv_bckgevent"
         android:layout_width="412dp"
         android:layout_height="191dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/bckgevent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -24,21 +32,33 @@
         android:layout_width="170dp"
         android:layout_height="27dp"
         android:layout_marginTop="25dp"
-        android:layout_marginStart="1dp"
+        android:paddingTop="3dp"
         android:text="@string/pom"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageView
+        android:id="@+id/img_notif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/notifikasi"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
         android:id="@+id/imageView5"
         android:layout_width="32dp"
         android:layout_height="26dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
         android:src="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,8 +67,8 @@
 
     <View
         android:id="@+id/v_detail"
-        android:layout_width="412dp"
-        android:layout_height="6dp"
+        android:layout_width="408dp"
+        android:layout_height="3dp"
         android:background="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -60,12 +80,11 @@
         android:id="@+id/tv_detail"
         android:layout_width="47dp"
         android:layout_height="24dp"
-        android:layout_marginStart="25dp"
         android:layout_marginTop="8dp"
         android:text="Detail"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imv_bckgevent"
         tools:ignore="MissingConstraints" />
 
@@ -73,49 +92,50 @@
         android:id="@+id/tv_panitia"
         android:layout_width="53dp"
         android:layout_height="25dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:text="Panitia"
+        android:textColor="@color/blue"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_detail"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintTop_toTopOf="@+id/tv_detail"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_agenda"
         android:layout_width="57dp"
         android:layout_height="23dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:text="Agenda"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_panitia"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintTop_toTopOf="@+id/tv_panitia"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_anggaran"
         android:layout_width="65dp"
         android:layout_height="20dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:text="Anggaran"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_agenda"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintTop_toTopOf="@+id/tv_agenda"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_chekclist"
         android:layout_width="66dp"
         android:layout_height="26dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:text="Checklist"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_anggaran"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintTop_toTopOf="@+id/tv_anggaran"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_ketua"
@@ -125,209 +145,200 @@
         android:text="Ketua Panitia"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/v_detail"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="28dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/et_ketua"
-        android:layout_width="318dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="294dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
         android:text="Vera Romandhon"
         android:textSize="11sp"
-        app:layout_constraintStart_toStartOf="@+id/img_ketua"
+        app:layout_constraintStart_toEndOf="@+id/view10"
         app:layout_constraintTop_toBottomOf="@+id/tv_ketua"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/img_ketua"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ceklis"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_ketua" />
+    <View
+        android:id="@+id/view10"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ketua"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/et_dvsacara"
-        android:layout_width="318dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="294dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
         android:text="Margaretha Meylia"
         android:textSize="11sp"
-        app:layout_constraintStart_toStartOf="@+id/img_dvsacara"
+        app:layout_constraintStart_toEndOf="@+id/view11"
         app:layout_constraintTop_toBottomOf="@+id/tv_dvsacara"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/img_dvsacara"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ceklis"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_dvsacara" />
+    <View
+        android:id="@+id/view12"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border2"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/view11"
+        app:layout_constraintTop_toBottomOf="@+id/view11" />
 
     <TextView
         android:id="@+id/tv_dvsacara"
         android:layout_width="96dp"
         android:layout_height="23dp"
+        android:layout_marginTop="5dp"
         android:text="Divisi Acara"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view10"
         app:layout_constraintTop_toBottomOf="@+id/et_ketua"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="28dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/et_dvsacara1"
-        android:layout_width="318dp"
+        android:layout_width="295dp"
         android:layout_height="34dp"
-        android:text="Muhammad Thoriq"
+        android:layout_marginTop="5dp"
+        android:text="M. Wiriawan Nasution"
         android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/view12"
         app:layout_constraintTop_toBottomOf="@+id/et_dvsacara"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="52dp" />
+        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/img_dvsacara1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
-        android:src="@drawable/ceklis"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_dvsacara" />
+    <View
+        android:id="@+id/view16"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/view15"
+        app:layout_constraintTop_toBottomOf="@+id/view15" />
 
     <TextView
         android:id="@+id/tv_dvskonsumsi"
         android:layout_width="131dp"
         android:layout_height="24dp"
-        android:layout_marginTop="4dp"
-        android:text="Divisi Konsumsi"
+        android:layout_marginTop="5dp"
+        android:text="Divisi Logistik"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/et_dvsacara1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="28dp" />
+        app:layout_constraintStart_toStartOf="@+id/view13"
+        app:layout_constraintTop_toBottomOf="@+id/et_dvskonsumsi1"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/et_dvskonsumsi"
-        android:layout_width="318dp"
-        android:layout_height="34dp"
-        android:text="Wiriawan Nasution"
+        android:layout_width="295dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:text="Margaretha Meylia"
         android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/view14"
         app:layout_constraintTop_toBottomOf="@+id/tv_dvskonsumsi"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="52dp" />
+        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/img_dvskonsumsi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ceklis"
+    <View
+        android:id="@+id/view14"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:backgroundTint="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_dvskonsumsi"
         app:layout_constraintTop_toBottomOf="@+id/tv_dvskonsumsi" />
 
     <EditText
         android:id="@+id/et_dvskonsumsi1"
-        android:layout_width="318dp"
+        android:layout_width="295dp"
         android:layout_height="34dp"
+        android:layout_marginTop="5dp"
         android:text="Hana Mardini"
         android:textSize="11sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_dvskonsumsi"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="52dp" />
+        app:layout_constraintStart_toEndOf="@+id/view13"
+        app:layout_constraintTop_toBottomOf="@+id/et_dvsacara1"
+        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/img_dvskonsumsi1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
-        android:src="@drawable/ceklis"
+    <View
+        android:id="@+id/view15"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border2"
+        android:backgroundTint="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_dvskonsumsi" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/view14" />
 
-    <TextView
-        android:id="@+id/tv_nondvs"
-        android:layout_width="131dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="5dp"
-        android:text="Non Divisi"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/et_dvskonsumsi1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="28dp" />
 
     <EditText
         android:id="@+id/et_nondvs"
-        android:layout_width="318dp"
-        android:layout_height="34dp"
-        android:text="Adryan Eka"
+        android:layout_width="294dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="5dp"
+        android:text="M. Wiriawan Nasution"
         android:textSize="11sp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nondvs"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="52dp" />
+        app:layout_constraintStart_toEndOf="@+id/view15"
+        app:layout_constraintTop_toBottomOf="@+id/et_dvskonsumsi"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/et_nondvs1"
-        android:layout_width="318dp"
-        android:layout_height="34dp"
-        android:text="Amalia Fyrdaussa"
+        android:id="@+id/editText3"
+        android:layout_width="294dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="5dp"
+        android:text="Hana Mardini"
         android:textSize="11sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_nondvs"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="52dp" />
+        app:layout_constraintStart_toEndOf="@+id/view16"
+        app:layout_constraintTop_toBottomOf="@+id/et_nondvs" />
 
-    <ImageView
-        android:id="@+id/img_nondvs"
-        android:layout_width="wrap_content"
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view10"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dvsacara" />
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/border2"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+    <include
+        layout="@layout/fragment_panitia2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ceklis"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lihatdetail2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nondvs" />
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
-    <ImageView
-        android:id="@+id/img_nondvs1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
-        android:src="@drawable/ceklis"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_nondvs" />
-
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_width="45dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_nondvs1" />
-
-    <ImageView
-        android:id="@+id/img_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.863"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_nondvs1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

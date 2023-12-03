@@ -5,18 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Beranda.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Beranda : Fragment(), View.OnClickListener {
 
     override fun onCreateView(
@@ -32,17 +24,44 @@ class Beranda : Fragment(), View.OnClickListener {
 
         val imgNotifikasi: ImageView = view.findViewById(R.id.img_notif)
         imgNotifikasi.setOnClickListener(this)
+
+        val btnevent: Button = view.findViewById(R.id.btn_buatevent)
+        btnevent.setOnClickListener(this)
+
+        val btngabungevent: Button = view.findViewById(R.id.btn_gbngevent)
+        btngabungevent.setOnClickListener(this)
+
     }
 
     override fun onClick(v: View?) {
         if (v?.id == R.id.img_notif) {
-            val imgnotifikasi = Notifikasi()
+            val notifikasi = Notifikasi()
             val fragmentManager = parentFragmentManager
             fragmentManager.beginTransaction().apply {
-                replace(R.id.img_notif, imgnotifikasi, Notifikasi::class.java.simpleName)
+                replace(R.id.framelayout, notifikasi, Notifikasi::class.java.simpleName)
                 addToBackStack(null)
                 commit()
             }
         }
+        if (v?.id == R.id.btn_buatevent) {
+            val buatevent = BuatEventFragment()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, buatevent, BuatEventFragment::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.btn_gbngevent) {
+            val gabungevent = GabungEventFragment()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, gabungevent, GabungEventFragment::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
     }
 }

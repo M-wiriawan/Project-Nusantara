@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NotifSudahBacaFragment">
+
+    <TextView
+        android:id="@+id/tv_notif"
+        android:layout_width="207dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Notifikasi"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/img_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_tandai"
+        android:layout_width="86dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/sudah_baca"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notif" />
+
+    <TextView
+        android:id="@+id/tv_jangan1"
+        android:layout_width="277dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/jangan1"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tandai"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_notif"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tandai" />
+
+    <TextView
+        android:id="@+id/tv_jangan2"
+        android:layout_width="277dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/jangan2"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_jangan1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_notif"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jangan1" />
+
+    <TextView
+        android:id="@+id/tv_jangan3"
+        android:layout_width="277dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/jangan3"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_jangan2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_notif"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jangan2" />
+
+    <Button
+        android:id="@+id/btn_notif"
+        android:layout_width="31dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintStart_toStartOf="@+id/img_back"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tandai"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_notif"
+        android:layout_width="20dp"
+        android:layout_height="21dp"
+        android:src="@drawable/notifikasi"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_notif"
+        app:layout_constraintEnd_toEndOf="@+id/btn_notif"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/btn_notif"
+        app:layout_constraintTop_toTopOf="@+id/btn_notif" />
+
+    <Button
+        android:id="@+id/btn_notif1"
+        android:layout_width="31dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/tv_jangan1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_back"
+        app:layout_constraintTop_toBottomOf="@+id/btn_notif"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_notif1"
+        android:layout_width="19dp"
+        android:layout_height="21dp"
+        android:src="@drawable/notifikasi"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_notif1"
+        app:layout_constraintEnd_toEndOf="@+id/btn_notif1"
+        app:layout_constraintStart_toStartOf="@+id/btn_notif1"
+        app:layout_constraintTop_toTopOf="@+id/btn_notif1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_notif2"
+        android:layout_width="31dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/tv_jangan1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_back"
+        app:layout_constraintTop_toBottomOf="@+id/btn_notif1"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_notif2"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:src="@drawable/notifikasi"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_notif2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_notif2"
+        app:layout_constraintStart_toStartOf="@+id/btn_notif2"
+        app:layout_constraintTop_toTopOf="@+id/btn_notif2"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

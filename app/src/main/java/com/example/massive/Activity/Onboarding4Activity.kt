@@ -17,12 +17,21 @@ class Onboarding4Activity : AppCompatActivity(), View.OnClickListener {
 
         val btnMulai: Button = findViewById(R.id.btn_slnjutnya)
         btnMulai.setOnClickListener(this)
+
+        val imgback: ImageView = findViewById(R.id.img_back)
+        imgback.setOnClickListener(this)
+
     }
 
     override fun onClick(v: View) {
         when (v.id){
             R.id.btn_slnjutnya -> {
-                val intent = Intent (this@Onboarding4Activity, Registrasi::class.java)
+                val intent = Intent (this@Onboarding4Activity, LoginActivity::class.java)
+                startActivity(intent)
+            }
+
+            R.id.img_back-> {
+                val intent = Intent (this@Onboarding4Activity, Onboarding1Activity::class.java)
                 startActivity(intent)
             }
         }

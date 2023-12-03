@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_white"
     tools:context=".DetailEvent">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,6 +19,7 @@
         android:id="@+id/imv_bckgevent"
         android:layout_width="412dp"
         android:layout_height="191dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/bckgevent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -24,7 +32,7 @@
         android:layout_width="170dp"
         android:layout_height="27dp"
         android:layout_marginTop="25dp"
-        android:layout_marginStart="1dp"
+        android:paddingTop="3dp"
         android:text="@string/pom"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -35,10 +43,22 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
+        android:id="@+id/img_notif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/notifikasi"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
         android:id="@+id/imageView5"
         android:layout_width="32dp"
         android:layout_height="26dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
         android:src="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,8 +67,8 @@
 
     <View
         android:id="@+id/v_detail"
-        android:layout_width="412dp"
-        android:layout_height="6dp"
+        android:layout_width="408dp"
+        android:layout_height="3dp"
         android:background="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -60,12 +80,12 @@
         android:id="@+id/tv_detail"
         android:layout_width="47dp"
         android:layout_height="24dp"
-        android:layout_marginStart="25dp"
         android:layout_marginTop="8dp"
+        android:textColor="@color/blue"
         android:text="Detail"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imv_bckgevent"
         tools:ignore="MissingConstraints" />
 
@@ -73,49 +93,50 @@
         android:id="@+id/tv_panitia"
         android:layout_width="53dp"
         android:layout_height="25dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:text="Panitia"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_detail"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintTop_toTopOf="@+id/tv_detail"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_agenda"
         android:layout_width="57dp"
         android:layout_height="23dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:text="Agenda"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_panitia"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintTop_toTopOf="@+id/tv_panitia"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_anggaran"
         android:layout_width="67dp"
         android:layout_height="24dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:text="Anggaran"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_agenda"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="252dp" />
+        app:layout_constraintTop_toTopOf="@+id/tv_agenda"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_chekclist"
         android:layout_width="66dp"
         android:layout_height="26dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:text="Checklist"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_anggaran"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="252dp" />
+        app:layout_constraintTop_toTopOf="@+id/tv_anggaran"
+        tools:ignore="MissingConstraints" />
+
 
     <TextView
         android:id="@+id/tv_deskripsi"
@@ -125,20 +146,22 @@
         android:text="Detail/Deskripsi"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail"
         app:layout_constraintTop_toBottomOf="@+id/v_detail"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_deskripsi1"
-        android:layout_width="349dp"
-        android:layout_height="60dp"
+        android:layout_width="333dp"
+        android:layout_height="65dp"
         android:text="@string/detail"
         android:textColor="@color/dark_grey"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chekclist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_deskripsi"
         app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_kodeacara"
@@ -148,29 +171,37 @@
         android:text="Kode Acara"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_deskripsi1"
         app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="33dp" />
+        tools:ignore="MissingConstraints" />
 
-    <EditText
+    <TextView
         android:id="@+id/et_kodeacara"
-        android:layout_width="348dp"
-        android:layout_height="41dp"
-        android:text="Masukkan Kode Acara"
+        android:layout_width="331dp"
+        android:layout_height="38dp"
+        android:paddingTop="8dp"
+        android:paddingStart="8dp"
+        android:text="ccp-2901-hsaj"
+        android:background="@drawable/tv_white"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chekclist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_kodeacara"
         app:layout_constraintTop_toBottomOf="@+id/tv_kodeacara"
-        tools:layout_editor_absoluteX="33dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_copy"
         android:layout_width="25dp"
         android:layout_height="27dp"
+        android:layout_marginTop="5dp"
         android:src="@drawable/copy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_kodeacara" />
+        app:layout_constraintBottom_toBottomOf="@+id/et_kodeacara"
+        app:layout_constraintEnd_toEndOf="@+id/et_kodeacara"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@+id/et_kodeacara"
+        app:layout_constraintTop_toTopOf="@+id/et_kodeacara"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_tambahan"
@@ -178,9 +209,9 @@
         android:layout_height="22dp"
         android:text="@string/tambahan"
         android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/et_kodeacara"
         app:layout_constraintTop_toBottomOf="@+id/et_kodeacara"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="33dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_tglacara"
@@ -190,68 +221,103 @@
         android:text="Tanggal Acara"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_tambahan"
         app:layout_constraintTop_toBottomOf="@+id/tv_tambahan"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="33dp" />
+        tools:ignore="MissingConstraints" />
 
-    <EditText
+    <TextView
         android:id="@+id/et_tglacara"
-        android:layout_width="348dp"
-        android:layout_height="41dp"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:background="@drawable/tv_white"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
         android:text="1-7 November 2023"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chekclist"
+        app:layout_constraintStart_toStartOf="@+id/tv_tglacara"
         app:layout_constraintTop_toBottomOf="@+id/tv_tglacara"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="33dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_kalender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:src="@drawable/kalender"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_tglacara" />
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_tglacara"
+        app:layout_constraintEnd_toEndOf="@+id/et_tglacara"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="@+id/et_tglacara"
+        app:layout_constraintTop_toTopOf="@+id/et_tglacara"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_ktgriacara"
         android:layout_width="105dp"
         android:layout_height="22dp"
+        android:layout_marginTop="10dp"
         android:text="Kategori Acara"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/et_tglacara"
         app:layout_constraintTop_toBottomOf="@+id/et_tglacara"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp" />
+        tools:ignore="MissingConstraints" />
 
-    <EditText
+    <TextView
         android:id="@+id/et_ktgriacara"
-        android:layout_width="348dp"
-        android:layout_height="41dp"
+        android:layout_width="330dp"
+        android:layout_height="38dp"
         android:layout_marginTop="4dp"
+        android:background="@drawable/tv_white"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
         android:text="Sport"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chekclist"
+        app:layout_constraintStart_toStartOf="@+id/tv_ktgriacara"
         app:layout_constraintTop_toBottomOf="@+id/tv_ktgriacara"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="34dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_copy"
         android:layout_width="94dp"
         android:layout_height="23dp"
+        android:layout_marginTop="10dp"
         android:text="Detail Agenda"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/et_ktgriacara"
         app:layout_constraintTop_toBottomOf="@+id/et_ktgriacara"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="34dp" />
+        tools:ignore="MissingConstraints" />
 
-    <EditText
+    <TextView
         android:id="@+id/et_detailacara"
-        android:layout_width="348dp"
-        android:layout_height="41dp"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:paddingTop="12dp"
+        android:paddingStart="8dp"
+        android:text="Lihat Detail Agenda"
+        android:background="@drawable/tv_white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chekclist"
+        app:layout_constraintStart_toStartOf="@+id/tv_copy"
         app:layout_constraintTop_toBottomOf="@+id/tv_copy"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="34dp" />
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:src="@drawable/next"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_detailacara"
+        app:layout_constraintTop_toTopOf="@+id/et_detailacara" />
+
+    <include
+        layout="@layout/fragment_detail_event2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lihatdetail2"
+        app:layout_constraintTop_toBottomOf="@+id/et_detailacara" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
