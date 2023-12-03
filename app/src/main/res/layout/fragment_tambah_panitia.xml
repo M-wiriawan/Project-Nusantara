@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahPanitia">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_tambahpanitia"
+        android:layout_width="170dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="25dp"
+        android:text="Tambah Panitia"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/img_back"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_ketuapanitia"
+        android:layout_width="88dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="24dp"
+        android:text="Ketua Panitia"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tambahpanitia"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <EditText
+        android:id="@+id/et_ketua"
+        android:layout_width="342dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ketuapanitia"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="103dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Divisi Acara"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/et_ketua"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <EditText
+        android:id="@+id/edt_acara"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <EditText
+        android:id="@+id/edt_acara1"
+        android:layout_width="343dp"
+        android:layout_height="36dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <TextView
+        android:id="@+id/tv_logistik"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:text="Non Divisi"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edt_acara1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <EditText
+        android:id="@+id/edt_logis1"
+        android:layout_width="348dp"
+        android:layout_height="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logistik"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_divisi"
+        android:layout_width="251dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/btn_blue"
+        android:backgroundTint="@color/blue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:text="Tambah Divisi"
+        app:layout_constraintTop_toBottomOf="@+id/edt_logis1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="68dp" />
+
+    <ImageView
+        android:id="@+id/img_person"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/tambah_orang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="335dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <ImageView
+        android:id="@+id/img_person2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/tambah_orang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <ImageView
+        android:id="@+id/img_person3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/tambah_orang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <ImageView
+        android:id="@+id/img_person4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/tambah_orang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
