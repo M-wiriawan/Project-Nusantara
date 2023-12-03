@@ -102,6 +102,15 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="25dp" />
 
+    <EditText
+        android:id="@+id/edt_non2"
+        android:layout_width="348dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logistik"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_divisi"
         android:layout_width="251dp"
@@ -151,5 +160,15 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="331dp"
         tools:layout_editor_absoluteY="330dp" />
+
+    <ImageView
+        android:id="@+id/img_person5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/tambah_orang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="367dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
