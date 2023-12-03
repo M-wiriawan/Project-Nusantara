@@ -67,4 +67,15 @@
     <string name="Deskripsi">Membahas visi dan misi Pekan Olahraga Mahasiswa STIE Bank BPD Jateng Tahun 2023, serta ...</string>
     <string name="Desk_event4">Meninjau konsep akhir Pekan Olahraga Mahasiswa. Seluruh aspek acara akan dievaluasi, dan persiapan menuju pelaksanaan acara akan diperinci secara menyeluruh.</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tambah_panitia">Tambah Panitia</string>
+    <string name="ketua_panitia">Ketua Panitia</string>
+    <string name="divisi_acara">Divisi Acara</string>
+    <string name="divisi_logistik">Divisi Logistik</string>
+    <string name="non_divisi">Non Divisi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
