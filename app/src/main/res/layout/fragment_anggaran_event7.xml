@@ -210,7 +210,7 @@
         android:padding="4dp">
 
         <TableLayout
-            android:id="@+id/tableLayout"
+            android:id="@+id/tableLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -291,7 +291,7 @@
         android:padding="4dp">
 
         <TableLayout
-            android:id="@+id/tableLayout"
+            android:id="@+id/tableLayout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 

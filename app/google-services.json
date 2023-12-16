@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "872661791054",
+    "project_id": "massive-fa354",
+    "storage_bucket": "massive-fa354.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872661791054:android:71dbf7df26e0cc83206e1f",
+        "android_client_info": {
+          "package_name": "com.example.massive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6q6ieaHIso4agtDms-oUaX-vzttsOaPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

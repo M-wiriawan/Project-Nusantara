@@ -16,27 +16,35 @@ class FiturActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fitur)
 
+        val Beranda= Beranda()
+        val EventAktif= EventAktif()
+        val Profile= Profile()
+
+        setCurrentFragment(Beranda)
 
         bottomNavigationView = findViewById(R.id.bottom_navigasi)
-        bottomNavigationView.setOnNavigationItemSelectedListener {item ->
-            var selectedFragment: Fragment? = null
+        bottomNavigationView.setOnNavigationItemSelectedListener {
 
-            when (item.itemId) {
-                R.id.beranda -> selectedFragment = Beranda()
-                R.id.event -> selectedFragment = EventAktif()
-                R.id.profil -> selectedFragment = Profile()
+            when (it.itemId) {
+                R.id.beranda -> setCurrentFragment(Beranda)
+                R.id.event -> setCurrentFragment(EventAktif)
+                R.id.profil -> setCurrentFragment(Profile)
             }
 
-            if (selectedFragment != null) {
-                val fragmentManager: FragmentManager = supportFragmentManager
-                fragmentManager.beginTransaction()
-                    .replace(R.id.framelayout, selectedFragment)
-                    .commit()
-            }
+//            if (selectedFragment != null) {
+//                val fragmentManager: FragmentManager = supportFragmentManager
+//                fragmentManager.beginTransaction()
+//                    .replace(R.id.framelayout, selectedFragment)
+//                    .commit()
+//            }
 
             true
         }
     }
 
-
+    private fun setCurrentFragment(fragment:Fragment)=
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.framelayout,fragment)
+            commit()
+        }
 }

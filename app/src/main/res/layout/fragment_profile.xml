@@ -94,7 +94,7 @@
     <TextView
         android:id="@+id/tv_ubhprofil"
         android:layout_width="302dp"
-        android:layout_height="39dp"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/custom_edit_text"
         android:text="Ubah Profile"
@@ -119,7 +119,7 @@
 
     <TextView
         android:id="@+id/tv_ubhkatasandi"
-        android:layout_width="299dp"
+        android:layout_width="302dp"
         android:layout_height="40dp"
         android:layout_marginTop="15dp"
         android:paddingTop="8dp"
@@ -145,8 +145,8 @@
 
     <TextView
         android:id="@+id/tv_infoapk"
-        android:layout_width="299dp"
-        android:layout_height="41dp"
+        android:layout_width="302dp"
+        android:layout_height="40dp"
         android:paddingStart="10dp"
         android:paddingTop="8dp"
         android:layout_marginTop="15dp"
