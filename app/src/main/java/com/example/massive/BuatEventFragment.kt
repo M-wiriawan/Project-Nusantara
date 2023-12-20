@@ -4,17 +4,20 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.massive.retrofit.ApiEndpoint
 import com.example.massive.retrofit.RetrofitClient
+import com.github.dhaval2404.imagepicker.ImagePicker
 
 
 class BuatEventFragment : Fragment() {
 
-//    private lateinit var textViewgambar: TextView
-//    private lateinit var imageViewgambar: ImageView
+    private lateinit var textViewgambar: TextView
+    private lateinit var imageViewgambar: ImageView
+    private lateinit var button: Button
 //
 //    private val apiInterface: ApiEn =
 //        RetrofitClient.getApiClient().create(ApiInterface::class.java)
@@ -88,7 +91,11 @@ class BuatEventFragment : Fragment() {
         }
 
         private fun startImagePicker(imagePickerRequestCodeAcara: Int) {
-
+                ImagePicker.with(this)
+                        .crop()
+                        .compress(1024)
+                        .maxResultSize(1080, 1080)
+                        .start(imagePickerRequestCodeAcara)
         }
 
 
