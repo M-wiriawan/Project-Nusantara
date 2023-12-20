@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
@@ -53,6 +54,12 @@ class DetailEvent : Fragment(), View.OnClickListener {
 
         val checklist: TextView = view.findViewById(R.id.tv_chekclist)
         checklist.setOnClickListener(this)
+
+        val imgBack: ImageView = view.findViewById(R.id.back_detail)
+        imgBack.setOnClickListener(this)
+
+        val imgNotifikasi: ImageView = view.findViewById(R.id.img_notif)
+        imgNotifikasi.setOnClickListener(this)
     }
 
     companion object {
@@ -112,6 +119,26 @@ class DetailEvent : Fragment(), View.OnClickListener {
             val fragmentManager = parentFragmentManager
             fragmentManager.beginTransaction().apply {
                 replace(R.id.framelayout, check, CheckListFragment::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.back_detail) {
+            val back = EventAktif()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, back, EventAktif::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.img_notif) {
+            val notifikasi = Notifikasi()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, notifikasi, Notifikasi::class.java.simpleName)
                 addToBackStack(null)
                 commit()
             }

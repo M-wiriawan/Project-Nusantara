@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
@@ -55,6 +56,12 @@ class AnggaranFragment : Fragment(), View.OnClickListener {
 
         val tambah: TextView = view.findViewById(R.id.btn_tambah)
         tambah.setOnClickListener(this)
+
+        val imgBack: ImageView = view.findViewById(R.id.back_anggaran)
+        imgBack.setOnClickListener(this)
+
+        val imgNotifikasi: ImageView = view.findViewById(R.id.img_notif)
+        imgNotifikasi.setOnClickListener(this)
     }
 
     companion object {
@@ -123,6 +130,26 @@ class AnggaranFragment : Fragment(), View.OnClickListener {
             val fragmentManager = parentFragmentManager
             fragmentManager.beginTransaction().apply {
                 replace(R.id.framelayout, tambah, AnggaranEvent3::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.back_anggaran) {
+            val back = EventAktif()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, back, EventAktif::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.img_notif) {
+            val notifikasi = Notifikasi()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, notifikasi, Notifikasi::class.java.simpleName)
                 addToBackStack(null)
                 commit()
             }

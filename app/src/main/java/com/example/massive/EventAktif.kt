@@ -51,6 +51,7 @@ class EventAktif : Fragment(), View.OnClickListener {
         val detail: ImageView = view.findViewById(R.id.img_eventdahulu)
         detail.setOnClickListener(this)
 
+
     }
 
     companion object {

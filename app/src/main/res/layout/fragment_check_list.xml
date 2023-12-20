@@ -36,7 +36,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.032"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/back_check"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -53,7 +53,7 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/back_check"
         android:layout_width="32dp"
         android:layout_height="26dp"
         android:layout_marginStart="20dp"
@@ -82,7 +82,7 @@
         android:text="Detail"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/back_check"
         app:layout_constraintTop_toBottomOf="@+id/imv_bckgevent"
         tools:ignore="MissingConstraints" />
 
@@ -143,7 +143,7 @@
         android:text="Perlengkapan Utama"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/back_check"
         app:layout_constraintTop_toBottomOf="@+id/v_detail"
         tools:ignore="MissingConstraints" />
 

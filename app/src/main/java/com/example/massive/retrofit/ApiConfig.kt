@@ -15,7 +15,7 @@ class ApiConfig {
                 .addInterceptor(loggingInterceptor)
                 .build()
             val retrofit = Retrofit.Builder()
-                .baseUrl("http://34.128.103.110:5000/api/v1")
+                .baseUrl("http://192.168.1.10/app_eventify/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()

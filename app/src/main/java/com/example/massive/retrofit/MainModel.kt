@@ -1,6 +1,7 @@
 package com.example.massive.retrofit
 
-data class UpdateEventViewModel(
+
+data class MainModel (
     val id: Int,
     val judul: String,
     val deskripsi: String,
@@ -9,3 +10,4 @@ data class UpdateEventViewModel(
     val foto: String,
     val kode: String
 )
+

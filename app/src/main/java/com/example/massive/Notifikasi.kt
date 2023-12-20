@@ -85,6 +85,5 @@ class Notifikasi : Fragment(), View.OnClickListener {
                 commit()
             }
         }
-
     }
 }

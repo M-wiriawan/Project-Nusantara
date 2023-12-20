@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
@@ -56,6 +57,12 @@ class AgendaFragment : Fragment(), View.OnClickListener {
 
         val btntambah: Button = view.findViewById(R.id.btn_tambah)
         btntambah.setOnClickListener(this)
+
+        val imgBack: ImageView = view.findViewById(R.id.back_agenda)
+        imgBack.setOnClickListener(this)
+
+        val imgNotifikasi: ImageView = view.findViewById(R.id.img_notif)
+        imgNotifikasi.setOnClickListener(this)
 
     }
 
@@ -125,6 +132,26 @@ class AgendaFragment : Fragment(), View.OnClickListener {
             val fragmentManager = parentFragmentManager
             fragmentManager.beginTransaction().apply {
                 replace(R.id.framelayout, tambah, AgendaEvent3::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.back_agenda) {
+            val back = EventAktif()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, back, EventAktif::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
+        }
+
+        if (v?.id == R.id.img_notif) {
+            val notifikasi = Notifikasi()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.framelayout, notifikasi, Notifikasi::class.java.simpleName)
                 addToBackStack(null)
                 commit()
             }
